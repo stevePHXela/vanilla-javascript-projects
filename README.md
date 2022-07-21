@@ -16,7 +16,7 @@ An open source project for mini vanilla Javascript projects with HTML&CSS(SASS).
 |01| [Writing Text Animation]() | [Live Demo]() |
 |02| [Search Bar Animation]() | [Live Demo]() |
 |03| [Convert Degrees To Radians]() | [Live Demo]() |
-|04| [Auto Dark Mode]() | [Live Demo]() |
+|04| [Auto Dark Mode](https://github.com/stevePHXela/vanilla-javascript-projects/tree/master/Auto%20Dark%20Mode) | [Live Demo]() |
 
 ---
 
