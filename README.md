@@ -13,9 +13,9 @@ An open source project for mini vanilla Javascript projects with HTML&CSS(SASS).
 
 |*| Project | Live Demo |
 |:-:| :--------: | :---------: |
-|01| [Writing Text Animation]() | [Live Demo]() |
-|02| [Search Bar Animation]() | [Live Demo]() |
-|03| [Convert Degrees To Radians]() | [Live Demo]() |
+|01| [Writing Text Animation](https://github.com/stevePHXela/vanilla-javascript-projects/tree/master/Writing%20Text%20Animation) | [Live Demo](https://codepen.io/steveFkela/pen/yLKMvpN) |
+|02| [Search Bar Animation](https://github.com/stevePHXela/vanilla-javascript-projects/tree/master/Search%20Bar%20Animation) | [Live Demo](https://codepen.io/steveFkela/pen/WNzjYzr) |
+|03| [Convert Degrees To Radians](https://github.com/stevePHXela/vanilla-javascript-projects/tree/master/Convert%20Degress%20To%20Radians) | [Live Demo]() |
 |04| [Auto Dark Mode](https://github.com/stevePHXela/vanilla-javascript-projects/tree/master/Auto%20Dark%20Mode) | [Live Demo]() |
 
 ---
