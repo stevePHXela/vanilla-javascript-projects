@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- javascript links -->
+    <script src="script.js" defer></script>
+    <title>Light Dark Mode</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div data-visible="true" data-light class="card-title">
+            <h1>Light Mode</h1>
+            <svg width="80" height="64" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M68.2961 10.867L73.2479 15.8153L65.438 23.5886L60.522 18.6411L68.2961 10.867ZM40 20.5C51.3459 20.5 60.81 28.624 62.9971 39.5H16.9927C18.9954 28.633 28.6448 20.5 40 20.5ZM79.5 48.5V63.5H0.5V48.5H79.5ZM36.5 0.5H43.5V11.5H36.5V0.5ZM14.6441 23.4808L6.8669 15.7L11.8161 10.7472L19.5969 18.528L14.6441 23.4808Z" fill="white" stroke="black"/>
+            </svg>
+        </div>
+        <div data-visible="false" data-dark class="display-x">
+            <h1>Dark Mode</h1>
+            <svg width="80" height="64" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M41.7356 32.224C32.1075 17.792 39.6694 5.088 43.9256 0C21.7769 0.608 4.04962 14.656 4.04962 31.968C4.04962 32.416 4.13227 32.864 4.13227 33.312C6.69425 32.448 9.46284 31.968 12.3967 31.968C19.2562 31.968 25.5372 34.624 29.3389 38.848C36.2397 40.384 41.3223 45.312 41.3223 51.168C41.3223 56.032 37.7273 60.224 32.562 62.4C36.6116 63.424 40.9504 64 45.4133 64C59.8761 64 72.6033 58.24 80 49.536C70.248 50.272 51.1571 46.432 41.7356 32.224Z" fill="#202020"/>
+                <path d="M24.7934 44.768H24.0496C22.314 41.056 17.7686 38.368 12.3967 38.368C5.53719 38.368 0 42.656 0 47.968C0 53.28 5.53719 57.568 12.3967 57.568C14.9587 57.568 22.6859 57.568 24.7934 57.568C29.3388 57.568 33.0578 54.688 33.0578 51.168C33.0578 47.648 29.3388 44.768 24.7934 44.768Z" fill="#202020"/>
+            </svg> 
+        </div>
+
+        <div class="card">
+            <img class="card__image" src="assets/ela.jpg" alt="ela">
+            <h2 class="card__title">Steve Ela</h2>
+            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptate.</p>
+            <div class="card__btns">
+                <a href="#" class="card__btns--btn enter-btn">Enter</a>
+                <a href="#" class="card__btns--btn more-btn">See More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="control-container">
+
+        <div class="switch-btn">
+            <a href="#" class="switch-btn__light on-active" data-light-btn>Light</a>
+            <a href="#" class="switch-btn__dark" data-dark-btn>Dark</a>
+        </div>
+
+        <div class="auto">
+            <input type="checkbox" id="checkbox-toggle">
+            <label for="checkbox-toggle" class="auto__btn" data-auto-btn aria-label="auto toggle"><span class="slider"></span></label>
+            <p class="auto__paragraph">This <strong>button</strong> job its to change the mode depend on the time of the day,
+                 example if its <time>12AM Clock</time> gonna change to <b>dark</b> mode or its <time>12PM Clock</time> gonna change to <b>light</b> mode.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

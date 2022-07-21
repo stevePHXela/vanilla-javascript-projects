@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&display=swap");
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #0F2027;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#2C5364), color-stop(#203A43), to(#0F2027));
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  font-family: 'Exo', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.searchBar-container {
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  padding: .5em 1em;
+  border: 0.2em solid rgba(0, 255, 255, 0.9);
+  border-radius: 2em;
+  background-color: #2C5364;
+  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.searchBar-container i {
+  font-size: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms;
+}
+
+.searchBar-container i:hover, .searchBar-container i:focus {
+  opacity: .7;
+}
+
+.searchBar-container input {
+  border: none;
+  outline: none;
+  color: cyan;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1.2rem;
+  margin: 0em 0.5em;
+}
+
+.s-active {
+  padding: 1em;
+  border-radius: 50%;
+  -webkit-transition: all 350ms ease-in;
+  transition: all 350ms ease-in;
+}
+
+.s-active input, .s-active .fa-microphone {
+  display: none;
+  -webkit-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+}
+/*# sourceMappingURL=main.css.map */

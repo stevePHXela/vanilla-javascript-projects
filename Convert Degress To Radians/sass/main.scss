@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+$clr-accent: #C449C2;
+$clr-bg-light: #EEEEEE;
+
+body {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    color: $clr-accent;
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    background-color: $clr-bg-light;
+    color: $clr-accent;
+    padding: 1em;
+    border-radius: 2em;
+
+    &__input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 0em;
+
+        &--text {
+            margin-right: 1em;
+
+            span {
+                font-size: 1.8em;
+            }
+
+            svg {
+                width: 12px;
+                height: 12px;
+                transform: translateY(-1rem);
+            }
+        }
+
+        &--field {
+            input {
+                border: none;
+                outline: none;
+                font-family: inherit;
+                border: .2em solid rgba($color: #000000, $alpha: .7);
+                border-radius: .8em;
+                padding: 0.6em 1em;
+                font-size: 1.2rem;
+                font-weight: bold;
+                transition: all 300ms ease-out;
+                background: transparent;
+                color: $clr-accent;
+
+                &:hover {
+                    border: .2em solid rgba($color: #000000, $alpha: .5);
+                }
+
+                &:focus {
+                    background-color: rgba($color: #000000, $alpha: .1);
+                    border: .2em solid rgba($color: #000000, $alpha: 1.0);
+                }
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+
+        div {
+            border: .2em solid $clr-accent;
+            border-radius: 1em;
+            padding: 0.4em .8em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 300ms ease-out;
+
+            span {
+                font-size: 1.2rem;
+                margin-right: .3em;
+            }
+        }
+
+        &--swap {
+            margin-right: 1em;
+        }
+
+        &--swap, &--reset {
+            &:hover, &:focus {
+                background-color: rgba($color: $clr-accent, $alpha: .5);
+                color: black;
+            }
+
+            &:active {
+                transform: scale(.95);
+            }
+        }
+
+        &--convert {
+            margin-left: auto;
+            font-size: 1.4em;
+            font-weight: bold;
+            background-color: $clr-accent;
+            color: #000;
+            padding: 0.4em 1.2em;
+
+            &:hover, &:focus {
+                background-color: transparent;
+                color: $clr-accent;
+            }
+
+            &:active {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

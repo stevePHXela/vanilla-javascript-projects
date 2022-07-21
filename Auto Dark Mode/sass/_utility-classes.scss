@@ -1,0 +1,21 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin titles($value) {
+    text-transform: uppercase;
+    letter-spacing: $value;
+    line-height: 1;
+}
+
+.display-x {
+    display: none;
+}

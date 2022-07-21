@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- JAVASCRIPT Files -->
+    <script src="index.js" defer></script>
+    <title>Degrees to Radians</title>
+</head>
+<body>
+    <h1>Type a Degree or Radian uint to convert</h1>
+
+    <div class="container">
+
+        <div class="container__input">
+            <div class="container__input--text">
+                <span>Degree</span>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 13.75C10.9518 13.75 13.75 10.9518 13.75 7.5C13.75 4.04822 10.9518 1.25 7.5 1.25C4.04822 1.25 1.25 4.04822 1.25 7.5C1.25 10.9518 4.04822 13.75 7.5 13.75Z" stroke="#C449C2" stroke-width="2"/></svg>
+            </div>
+
+            <div class="container__input--field">
+                <input data-degreeInput type="text" placeholder="Type..." >
+            </div>
+        </div>
+
+        <div class="container__buttons">
+            <a href="radian.html">
+                <div class="container__buttons--swap">
+                    <span>Swap</span>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 21.2625V12.5H17.5V21.2625H13.75L18.75 26.25L23.75 21.2625H20V21.2625ZM11.25 3.75L6.25 8.7375H10V17.5H12.5V8.7375H16.25L11.25 3.75Z" fill="#C449C2"/></svg>
+                </div>
+            </a>
+
+            <div class="container__buttons--reset" data-resetBtn>
+                <span>Reset</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6.25V2.5L10 7.5L15 12.5V8.75C19.1375 8.75 22.5 12.1125 22.5 16.25C22.5 19.9625 19.7875 23.0375 16.25 23.6375V26.1625C21.1875 25.55 25 21.35 25 16.25C25 10.725 20.525 6.25 15 6.25ZM7.5 16.25C7.5 14.1875 8.3375 12.3125 9.7 10.95L7.925 9.175C6.05174 11.0531 4.99983 13.5974 5 16.25C5 21.35 8.8125 25.55 13.75 26.1625V23.6375C10.2125 23.0375 7.5 19.9625 7.5 16.25Z" fill="#C449C2"/></svg>
+            </div>
+
+            <div class="container__buttons--convert" data-convertBtn>
+                <span>Convert</span>
+            </div>
+        </div>
+
+        <div class="container__input">
+            <div class="container__input--text">
+                <span>Radian</span>
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 8.75C2.5 7.75544 2.89509 6.80161 3.59835 6.09835C4.30161 5.39509 5.25544 5 6.25 5H25.3125C25.644 5 25.962 5.1317 26.1964 5.36612C26.4308 5.60054 26.5625 5.91848 26.5625 6.25C26.5625 6.58152 26.4308 6.89946 26.1964 7.13388C25.962 7.3683 25.644 7.5 25.3125 7.5H21.25V20.8787C21.2501 21.1792 21.3224 21.4753 21.4608 21.742C21.5992 22.0087 21.7997 22.2382 22.0454 22.4112C22.2911 22.5842 22.5747 22.6957 22.8725 22.7361C23.1702 22.7766 23.4733 22.7449 23.7562 22.6437L23.955 22.5725C24.2673 22.4611 24.611 22.4783 24.9106 22.6204C25.2102 22.7625 25.4411 23.0177 25.5525 23.33C25.6639 23.6423 25.6467 23.986 25.5046 24.2856C25.3625 24.5852 25.1073 24.8161 24.795 24.9275L24.5963 24.9988C21.7463 26.0163 18.75 23.9037 18.75 20.8787V7.5H12.4738C12.3786 9.25843 12.2285 11.0135 12.0238 12.7625C11.6288 16.1163 10.9113 20.44 9.61875 24.16C9.56491 24.3151 9.48104 24.4581 9.37193 24.5808C9.26283 24.7035 9.13062 24.8036 8.98286 24.8752C8.68444 25.0198 8.34079 25.04 8.0275 24.9312C7.71421 24.8225 7.45695 24.5938 7.31232 24.2954C7.16768 23.9969 7.14751 23.6533 7.25625 23.34C8.4625 19.8725 9.15375 15.7575 9.54 12.4713C9.73373 10.8189 9.87713 9.16106 9.97 7.5H6.25C5.91848 7.5 5.60054 7.6317 5.36612 7.86612C5.1317 8.10054 5 8.41848 5 8.75V9.375C5 9.70652 4.8683 10.0245 4.63388 10.2589C4.39946 10.4933 4.08152 10.625 3.75 10.625C3.41848 10.625 3.10054 10.4933 2.86612 10.2589C2.6317 10.0245 2.5 9.70652 2.5 9.375V8.75Z" fill="#C449C2"/></svg>
+            </div>
+
+            <div class="container__input--field">
+                <input data-radianInput type="text" placeholder="Result" readonly>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

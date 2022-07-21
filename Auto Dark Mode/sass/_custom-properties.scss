@@ -1,0 +1,37 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+
+    /* colors */
+    //dark mode
+    $clr-bg-dark: rgb(32, 32, 32);      //dark gray
+    $clr-accent-light: rgb(0, 232, 23);      //light green
+    $clr-accent-light-a: rgb(50, 255, 70);      //light green
+
+    $text-light-title: rgba(255, 255, 255, .8);  // white
+    $text-light-paragraph: rgba(255, 255, 255, .7);  //white
+    $text-dark-btn: rgba(0, 0, 0, .9);   //black
+
+    // Light mode
+    $clr-bg-light: rgb(255, 255, 255);   //white
+    $clr-accent-dark: rgb(0, 176, 18);  //dark green
+    $clr-accent-dark-a: rgba(0, 176, 18, .8);  //dark green
+
+    $text-dark-title: rgba(0, 0, 0, .8);   //black
+    $text-dark-paragraph: rgba(0, 0, 0, .7);   //black
+    $text-light-btn: rgba(255, 255, 255, .9);    // white
+    $text-light-btn-a: rgb(255, 255, 255);    // white
+    $text-dark-btn: rgba(0, 0, 0, .9);    // black
+
+    /* Fonts */
+    /* Font size */
+    $fs-big-title: 2.5rem;
+    $fs-title: 2rem;
+    $fs-btn: 1.3rem;
+    $fs-paragraph: 1.2rem;
+    $fs-normal: 1rem;
+
+    /* Font Weight */
+    $fw-title: 700; 
+    $fw-paragraph: 500;
+    $fw-btn: 600;

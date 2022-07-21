@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Forum&display=swap');
+
+/* Variables */
+
+// Colors
+$clr-bg-darkblue: rgb(13,17,23); // #0d1117
+$clr-lightgreen: rgb(0,204,103); // #00cc67
+
+$clr-lightgreen-hover: rgba(0,204,103, .2); // #00cc67
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-size-adjust: none;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Amaranth', sans-serif;
+    background-color: $clr-bg-darkblue;
+    color: $clr-lightgreen;
+}
+
+:focus {
+    outline: 0.1em solid $clr-lightgreen;
+}
+
+.text-container {
+    position: relative;
+    padding: .5rem;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background-color: $clr-bg-darkblue;
+        transform: translateX(var(--trans100, 50%));
+        transition: all var(--speed, 1200ms) linear;
+    }
+
+    h1 {
+        font-family: 'Amaranth', sans-serif;
+        font-size: 3rem;
+        transform: translateX(var(--trans0, 50%));
+        transition: all var(--speed, 1200ms) linear;
+    }
+}
+
+.btn-container {
+
+    margin-top: 2em;
+
+    button {
+        border: .1em solid $clr-lightgreen;
+        border-radius: 1em;
+        outline: none;
+        padding: .4em .8em;
+        font-size: 1.2rem;
+        background-color: transparent;
+        color: $clr-lightgreen;
+        cursor: pointer;
+        transition: all 250ms ease-out;
+
+        &:hover, &:focus {
+            background-color: $clr-lightgreen-hover;
+        }
+
+        &:active {
+            transform: scale(.95);
+        }
+    }
+
+    button:first-child {
+        margin-right: .5em;
+    }
+
+}
+
+.input-container {
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        margin-right: .4em;
+        font-size: 1.2rem;
+    }
+}

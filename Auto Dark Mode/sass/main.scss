@@ -1,0 +1,160 @@
+@import "./custom-properties", "./utility-classes", "./rest";
+
+body {
+    background-color: rgb(226, 226, 226);
+    @include flexCenter(row);
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    padding-top: 0;
+}
+/* ------------------ */
+/* layout & style     */
+/* ------------------ */
+
+.container {
+    padding-inline: auto;
+}
+
+.card-title {
+    @include flex(row);
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 4em;
+
+    h1
+    {
+        font-size: $fs-big-title;
+        font-weight: $fw-title;
+        @include titles(1.5px)
+    }
+}
+
+.card {
+    @include flexCenter(column);
+    justify-content: space-between;
+    max-width: 24rem;
+    min-height: 36rem;
+    background-color: $clr-bg-light;
+    padding: 2em;
+
+    &__image
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__title
+    {
+        margin-top: 1em;
+        margin-bottom: .5em;
+        font-size: $fs-title;
+        font-weight: $fw-title;
+        color: $text-dark-title;
+    }
+
+    &__paragraph
+    {
+        margin-bottom: 1em;
+        font-size: $fs-paragraph;
+        font-weight: $fw-paragraph;
+        color: $text-dark-paragraph;
+    }
+
+    &__title,
+    &__paragraph
+    {
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    &__btns
+    {
+        @include flex(row);
+        width: 100%;
+        margin-bottom: 1em;
+        
+        &--btn
+        {   
+            @include titles(.5px);
+            font-size: $fs-btn;
+            font-weight: $fw-btn;
+            padding: .4em 1.5em;
+            border-radius: 2em;
+            transition: all 300ms ease-in;
+            overflow: hidden;
+        }
+    }
+    
+    &__btns .enter-btn
+    {
+        background-color: $clr-accent-dark;
+        color: $text-light-btn;
+        
+
+        &:hover, &:focus
+        {
+            background-color: $clr-accent-dark-a;
+            color: $text-light-btn-a;
+        }
+    }
+
+    &__btns .more-btn
+    {
+        margin-left: 1em;
+        background-color: transparent;
+        color: $text-dark-paragraph;
+        border: .1em solid $clr-accent-dark;
+
+        &:hover, &:focus
+        {
+            background-color: $clr-accent-dark;
+            color: $text-light-btn;
+        }
+    }
+}
+
+.card-dark {
+
+    background-color: $clr-bg-dark;
+    
+    &__title
+    {
+        color: $text-light-title;
+    }
+
+    &__paragraph
+    {
+        color: $text-light-paragraph;
+    }
+}
+
+.enter-dark {
+    color: $text-dark-btn;
+    background-color: $clr-accent-light;
+    transition: all 300ms ease-in-out;
+
+    &:hover, &:focus
+    {
+        background-color: $clr-accent-light-a;
+    }
+}
+
+.more-dark {
+    color: $text-light-title;
+    border: .1em solid $clr-accent-light;
+    margin-left: 1em;
+    transition: all 300ms ease-in-out;
+
+    &:hover, &:focus
+    {
+        color: rgba($color: #000000, $alpha: 0.9);
+        background-color: $clr-accent-light-a;
+    }
+}
+@import "./control-buttons";
+
+@media (max-width: 62em) {
+    body {
+        font-size: .4rem;
+    }
+}
